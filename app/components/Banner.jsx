@@ -26,7 +26,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className="py-20 flex gap-20">
-                <div className="w-3/7 lg:ml-10 z-1 flex border rounded-2xl border-white py-5 px-8 bg-[rgba(255,255,255,0.09)] hover:scale-x-115 hover:scale-y-120 transition-transform duration-300 ease-in-out">
+                <div className="w-3/7 lg:ml-10 z-1 flex border rounded-2xl border-white py-5 px-8 bg-[rgba(255,255,255,0.07)] hover:scale-x-115 hover:scale-y-120 transition-transform duration-300 ease-in-out">
                     <Image src={banTwo} alt='banTwo'/>
                     <div className="text-white px-7">
                         <h2 className='font-montserrat font-semibold text-4xl text-transparent bg-clip-text bg-linear-to-r from-[#e03609] to-[#f0b71f] '>76,285K+</h2>
