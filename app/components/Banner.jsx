@@ -16,7 +16,7 @@ const Banner = () => {
                     <h4 className='font-montserrat font-semibold text-2xl'>Stories & Lore</h4>
                     <p className='text-[#DDDDDD] font-montserrat text-sm py-4'>Dive into compelling narratives set in a dystopian future.</p>
                 </div>
-                <div className="w-3/5 absolute top-30 translate-x-[30%] ">
+                <div className="w-3/5 absolute top-30 translate-x-[30%]">
                 <Image  src={ban} alt='banner-image' />
                 </div>
                 <div className="w-1/5 text-end py-30"> 
@@ -26,7 +26,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className="py-20 flex gap-20">
-                <div className="w-3/7 lg:ml-10 z-1 flex border rounded-2xl border-white py-5 px-8 bg-[rgba(255,255,255,0.07)] hover:scale-x-115 hover:scale-y-120 transition-transform duration-300 ease-in-out">
+                <div className="w-3/7 lg:ml-10 z-1 flex border rounded-2xl border-white py-5 px-8 bg-[rgba(255,255,255,0.07)] hover:scale-x-115 hover:scale-y-120 transition-transform duration-300 ease-in-out cursor-pointer">
                     <Image src={banTwo} alt='banTwo'/>
                     <div className="text-white px-7">
                         <h2 className='font-montserrat font-semibold text-4xl text-transparent bg-clip-text bg-linear-to-r from-[#e03609] to-[#f0b71f] '>76,285K+</h2>
@@ -34,7 +34,7 @@ const Banner = () => {
                         <p className='font-montserrat text-sm text-[#DDDDDD]'>Explore the high-tech, low-life world where the lines between</p>
                     </div>
                 </div>
-                <div className="w-4/7 flex justify-between text-white gap-5">
+                <div className="w-4/7 flex justify-between text-white gap-5 cursor-pointer">
                     <div className="w-2/3 pl-20 pr-15">
                         <h4 className='font-montserrat font-semibold text-2xl uppercase'>Art and Design</h4>
                     <p className='font-montserrat text-sm text-[#DDDDDD] py-8'>Feast your eyes on stunning visuals and concept art that bring the cyberpunk</p>

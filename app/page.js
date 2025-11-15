@@ -3,6 +3,7 @@ import Navber from './components/Navber'
 import Banner from './components/Banner'
 import About from './components/About'
 import Greetings from './components/Greetings'
+import Cybernetic from './components/Cybernetic'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <Banner/>
       <About/>
       <Greetings/>
+      <Cybernetic/>
     </>
   )
 }
