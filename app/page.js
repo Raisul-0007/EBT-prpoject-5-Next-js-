@@ -3,7 +3,9 @@ import Navber from './components/Navber'
 import Banner from './components/Banner'
 import About from './components/About'
 import Greetings from './components/Greetings'
-import Cybernetic from './components/Cybernetic'
+import Services from './components/Services'
+import Portal from './components/Portal'
+import FAQ from './components/FAQ'
 
 const page = () => {
   return (
@@ -12,7 +14,9 @@ const page = () => {
       <Banner/>
       <About/>
       <Greetings/>
-      <Cybernetic/>
+      <Services/>
+      <Portal/>
+      <FAQ/>
     </>
   )
 }

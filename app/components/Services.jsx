@@ -4,7 +4,7 @@ import cyberone from "../images/cyberone.png"
 import cybertwo from "../images/cybertwo.png"
 import cyberthree from "../images/cyberthree.png"
 import Container from './Container'
-const Cybernetic = () => {
+const Services = () => {
   return (
     <div className='bg-black'>
      <Container>
@@ -41,4 +41,4 @@ const Cybernetic = () => {
   )
 }
 
-export default Cybernetic
+export default Services
