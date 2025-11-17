@@ -1,16 +1,35 @@
+"use client"
 import React from 'react'
 import Container from './Container'
 import Image from 'next/image';
 import aboutOne from '../images/aboutOne.png'
 import aboutTwo from '../images/aboutTwo.png'
 import aboutThree from '../images/aboutThree.png'
-
+import { useEffect, useRef, useState } from "react";
 const About = () => {
+  const refOne = useRef(null);
+  const refTwo = useRef(null);
+  const [showOne, setShowOne] = useState(false);
+  const [showTwo, setShowTwo] = useState(false);
+
+  useEffect(() => {
+    const observerOne = new IntersectionObserver(
+      ([entry]) => setShowOne(entry.isIntersecting),
+      { threshold: 0.3, rootMargin: "-50px 0px -50px 0px" }
+    );
+    if (refOne.current) observerOne.observe(refOne.current);
+
+    const observerTwo = new IntersectionObserver(
+      ([entry]) => setShowTwo(entry.isIntersecting),
+      { threshold: 0.3, rootMargin: "-50px 0px -50px 0px" }
+    );
+    if (refTwo.current) observerTwo.observe(refTwo.current);
+  }, []);
   return (
     <div className='bg-black'>
         <Container>
             <div className="flex py-5">
-                <div className="w-1/2 px-5 py-20">
+                <div className="w-1/2 px-5 py-20 bg-black">
                     <h1 className='font-orbitron font-bold text-5xl text-white'>Where <span className='text-transparent bg-clip-text bg-linear-to-r from-[#f0b71f] to-[#e03609]'>Neon Dreams & Digital</span> Nightmares Converge.</h1>
                     <p className='font-montserrat text-sm text-white py-20 pr-15'>A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
                     <div className="flex justify-between pr-10">
@@ -28,12 +47,14 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2 p-10">
-                    <Image src={aboutOne} alt='aboutOne'/>
+                <div ref={refOne} className={`w-1/2 transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)]
+            ${showOne ? "opacity-100 translate-x-0 scale-100" : "opacity-0 -translate-x-52 scale-95"}`} >
+                    <Image src={aboutOne} alt='aboutOne'/> 
                 </div>
             </div>
             <div className="flex">
-                <div className="w-1/2">
+                <div  ref={refTwo}  className={`w-1/2 transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)]
+            ${showTwo ? "opacity-100 translate-x-0 scale-100" : "opacity-0 -translate-x-52 scale-95"}`}>
                     <Image className='h-[95%]' src={aboutTwo} alt='aboutTwo' />
                 </div>
                 <div className="w-1/2 px-15 py-20">

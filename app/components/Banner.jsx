@@ -7,21 +7,21 @@ import Link from 'next/link'
 const Banner = () => {
   return (
     <div className='bg-black relative'>
-        <Container className="">
+        <Container>
             <div className="">
-                <h1 className='font-orbitron font-bold text-white text-center text-[190px]'>Cyber Punk</h1>
+                <h1 className='font-orbitron font-bold text-white text-center text-[55px] lg:text-[190px] lg:pt-0 lg:pb-0 pt-40 pb-20'>Cyber Punk</h1>
             </div>
-            <div className="flex justify-between items-center ">
-                <div className="text-white w-1/5 py-30">
-                    <h4 className='font-montserrat font-semibold text-2xl'>Stories & Lore</h4>
-                    <p className='text-[#DDDDDD] font-montserrat text-sm py-4'>Dive into compelling narratives set in a dystopian future.</p>
+            <div className="lg:flex justify-between items-center ">
+                <div className="text-white lg:w-1/5 lg:py-30 py-10 w-2/3">
+                    <h4 className='font-montserrat font-semibold ;g:text-2xl text-xl'>Stories & Lore</h4>
+                    <p className='text-[#DDDDDD] font-montserrat text-sm lg:pr-4 pr-10 lg:py-4'>Dive into compelling narratives set in a dystopian future.</p>
                 </div>
-                <div className=" absolute left-0 top-25 translate-x-[30%]">
+                <div className=" lg:block absolute left-0 top-25 translate-x-[30%] hidden">
                 <Image  src={ban} alt='banner-image' />
                 </div>
-                <div className="w-1/5 text-end py-30"> 
-                    <h3 className='font-orbitron text-3xl text-[#DDDDDD] uppercase'>Events and <span className='font-semibold text-[33px]'>Updates</span></h3>
-                    <p className='text-[#DDDDDD] font-montserrat text-sm py-10 '>Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
+                <div className="lg:w-1/5 lg:text-end text-center lg:py-30 py-10"> 
+                    <h3 className='font-orbitron lg:text-3xl text-2xl text-[#DDDDDD] uppercase'>Events and <span className='font-semibold lg:text-[33px] text-[25px]'>Updates</span></h3>
+                    <p className='text-[#DDDDDD] font-montserrat text-sm lg:py-10 py-5'>Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
                     <Link className='bg-gradient-to-r from-[#f0b71f] to-[#e03609] px-2 py-2 rounded-md text-white hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-[#f0b71f] hover:to-[#e03609] border border-black hover:border-white cursor-pointer' href="#">Read More</Link>
                 </div>
             </div>

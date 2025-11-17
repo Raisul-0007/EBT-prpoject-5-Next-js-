@@ -5,11 +5,9 @@ import Greetings from './components/Greetings'
 import Services from './components/Services'
 import Portal from './components/Portal'
 import FAQ from './components/FAQ'
-
 const page = () => {
   return (
     <>
-     
       <Banner/>
       <About/>
       <Greetings/>
