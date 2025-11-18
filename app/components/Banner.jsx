@@ -25,23 +25,23 @@ const Banner = () => {
                     <Link className='bg-gradient-to-r from-[#f0b71f] to-[#e03609] px-2 py-2 rounded-md text-white hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-[#f0b71f] hover:to-[#e03609] border border-black hover:border-white cursor-pointer' href="#">Read More</Link>
                 </div>
             </div>
-            <div className="pt-40 flex gap-20">
-                <div className="w-3/7 lg:ml-10 z-1 flex border rounded-2xl border-white py-5 px-8 bg-[rgba(255,255,255,0.07)] hover:scale-x-115 hover:scale-y-120 transition-transform duration-300 ease-in-out cursor-pointer">
+            <div className="lg:pt-40 lg:px-0 px-2 lg:flex lg:gap-20">
+                <div className="lg:w-3/7 lg:ml-10 z-1 flex border rounded-2xl border-white lg:py-5 lg:px-8 px-5 bg-[rgba(255,255,255,0.07)] hover:scale-x-115 hover:scale-y-120 transition-transform duration-300 ease-in-out cursor-pointer">
                     <Image src={banTwo} alt='banTwo'/>
-                    <div className="text-white px-7">
-                        <h2 className='font-montserrat font-semibold text-4xl text-transparent bg-clip-text bg-linear-to-r from-[#e03609] to-[#f0b71f] '>76,285K+</h2>
-                        <h4 className='font-montserrat text-xl py-5 text-white'>Experience the Future</h4>
+                    <div className="text-white lg:py-0 py-2 px-7">
+                        <h2 className='font-montserrat font-semibold lg:text-4xl text-2xl text-transparent bg-clip-text bg-linear-to-r from-[#e03609] to-[#f0b71f] '>76,285K+</h2>
+                        <h4 className='font-montserrat lg:text-xl text-md lg:py-5 py-2 text-white'>Experience the Future</h4>
                         <p className='font-montserrat text-sm text-[#DDDDDD]'>Explore the high-tech, low-life world where the lines between</p>
                     </div>
                 </div>
-                <div className="w-4/7 z-1 flex justify-between text-white gap-5 cursor-pointer">
-                    <div className="w-2/3 pl-20 pr-15">
-                        <h4 className='font-montserrat font-semibold text-2xl uppercase'>Art and Design</h4>
-                    <p className='font-montserrat text-sm text-[#DDDDDD] py-8'>Feast your eyes on stunning visuals and concept art that bring the cyberpunk</p>
+                <div className="lg:w-4/7 lg:py-0 py-10 z-1 flex justify-between text-white lg:gap-5 cursor-pointer">
+                    <div className="w-2/3 lg:pl-20 lg:pr-15 pr-20">
+                        <h4 className='font-montserrat font-semibold lg:text-2xl  text-lg uppercase'>Art and Design</h4>
+                    <p className='font-montserrat text-sm text-[#DDDDDD] lg:py-8 py-3'>Feast your eyes on stunning visuals and concept art that bring the cyberpunk</p>
                     </div>
-                    <div className="w-1/3 px-10 border py-10 lg:mx-10 border-white bg-[rgba(255,255,255,0.11)] rounded-2xl hover:scale-115 transition-transform duration-300 ease-in-out">
-                        <h2 className='font-montserrat font-semibold text-5xl text-transparent bg-clip-text bg-linear-to-r from-[#e03609] to-[#f0b71f] '>17+</h2>
-                        <h4 className='font-montserrat text-xl'>Years of Experiences</h4>
+                    <div className="w-1/3 lg:px-10 px-4 border lg:py-10 py-5 lg:mx-10 border-white bg-[rgba(255,255,255,0.11)] rounded-2xl hover:scale-115 transition-transform duration-300 ease-in-out">
+                        <h2 className='font-montserrat font-semibold lg:text-5xl text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#e03609] to-[#f0b71f] '>17+</h2>
+                        <h4 className='font-montserrat lg:text-xl text-md'>Years of Experiences</h4>
                     </div>
                 </div>
             </div>
